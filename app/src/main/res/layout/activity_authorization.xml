@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AuthorizationActivity"
+    android:background="@android:color/white">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/spacing_large">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome_to_plasbot"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAlignment="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Display1"
+                android:layout_marginBottom="@dimen/spacing_middle" />
+
+            <TextView
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/request_permission"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:layout_marginBottom="@dimen/spacing_middle"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                android:text="We will need the following permissions:"
+                android:layout_marginBottom="@dimen/spacing_middle"
+                android:textAlignment="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:padding="@dimen/spacing_middle">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="@dimen/spacing_medium"
+                    android:minHeight="?attr/actionBarSize">
+                    <ImageView
+                        android:padding="@dimen/spacing_small"
+                        android:layout_width="@dimen/welcome_icon_size"
+                        android:layout_height="@dimen/welcome_icon_size"
+                        android:src="@drawable/ic_camera_black"
+                        android:tint="@color/grey_500"/>
+
+                    <View
+                        android:layout_width="@dimen/spacing_large"
+                        android:layout_height="match_parent" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="Access to your camera"
+                                android:gravity="center_vertical"/>
+                            <View
+                                android:layout_width="@dimen/spacing_large"
+                                android:layout_height="match_parent" />
+                            <ImageView
+                                android:layout_gravity="center_vertical"
+                                android:padding="@dimen/spacing_small"
+                                android:layout_width="@dimen/welcome_icon_size"
+                                android:layout_height="@dimen/welcome_icon_size"
+                                android:src="@drawable/ic_watch_later"
+                                android:tint="@color/grey_500"/>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grey_10" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/spacing_medium"
+                    android:minHeight="?attr/actionBarSize"
+                    android:gravity="center_vertical">
+                    <ImageView
+                        android:padding="@dimen/spacing_small"
+                        android:layout_width="@dimen/welcome_icon_size"
+                        android:layout_height="@dimen/welcome_icon_size"
+                        android:src="@drawable/ic_location"
+                        android:tint="@color/grey_500"/>
+
+                    <View
+                        android:layout_width="@dimen/spacing_large"
+                        android:layout_height="match_parent" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="Access to your location"
+                                android:gravity="center_vertical"/>
+                            <View
+                                android:layout_width="@dimen/spacing_large"
+                                android:layout_height="match_parent" />
+                            <ImageView
+                                android:padding="@dimen/spacing_small"
+                                android:layout_width="@dimen/welcome_icon_size"
+                                android:layout_height="@dimen/welcome_icon_size"
+                                android:src="@drawable/ic_watch_later"
+                                android:tint="@color/grey_500"/>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grey_10" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/spacing_medium"
+                    android:gravity="center_vertical"
+                    android:minHeight="?attr/actionBarSize">
+                    <ImageView
+                        android:padding="@dimen/spacing_small"
+                        android:layout_width="@dimen/welcome_icon_size"
+                        android:layout_height="@dimen/welcome_icon_size"
+                        android:src="@drawable/ic_sd_storage"
+                        android:tint="@color/grey_500"/>
+
+                    <View
+                        android:layout_width="@dimen/spacing_large"
+                        android:layout_height="match_parent" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="Access to your storage"
+                                android:gravity="center_vertical"/>
+                            <View
+                                android:layout_width="@dimen/spacing_large"
+                                android:layout_height="match_parent" />
+                            <ImageView
+                                android:padding="@dimen/spacing_small"
+                                android:layout_width="@dimen/welcome_icon_size"
+                                android:layout_height="@dimen/welcome_icon_size"
+                                android:src="@drawable/ic_watch_later"
+                                android:tint="@color/grey_500"/>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grey_10" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/spacing_medium"
+                    android:gravity="center_vertical"
+                    android:minHeight="?attr/actionBarSize">
+                    <ImageView
+                        android:padding="@dimen/spacing_small"
+                        android:layout_width="@dimen/welcome_icon_size"
+                        android:layout_height="@dimen/welcome_icon_size"
+                        android:src="@drawable/ic_contacts"
+                        android:tint="@color/grey_500"/>
+
+                    <View
+                        android:layout_width="@dimen/spacing_large"
+                        android:layout_height="match_parent" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="Access to your contact list"
+                                android:gravity="center_vertical"/>
+                            <View
+                                android:layout_width="@dimen/spacing_large"
+                                android:layout_height="match_parent" />
+                            <ImageView
+                                android:padding="@dimen/spacing_small"
+                                android:layout_width="@dimen/welcome_icon_size"
+                                android:layout_height="@dimen/welcome_icon_size"
+                                android:src="@drawable/ic_watch_later"
+                                android:tint="@color/grey_500"/>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grey_10" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:id="@+id/request_all_permissions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_rounded_primary"
+                android:text="Give Permissions"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

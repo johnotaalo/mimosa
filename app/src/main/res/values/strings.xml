@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PlasBot</string>
+    <string name="welcome_to_plasbot">Welcome to PlasBot</string>
+    <string name="request_permission">PlasBot would like to ask for permissions before we get started</string>
+</resources>
